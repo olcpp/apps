@@ -1,0 +1,1 @@
+{"type":"console","name":"XACRAFT","author":"ShaXingAn","license":"custom","files":{"cpp":["main.cpp"],"js":[]},"compilerOptions":{"fallbackFlags":["-std=c++98","-O2","-sTOTAL_STACK=8388608","-sASYNCIFY_STACK_SIZE=8388608"]},"id":"xacraft","private":false,"assets":[]}
