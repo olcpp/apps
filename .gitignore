@@ -1,0 +1,8 @@
+*/.mjs
+*/.wasm
+*/.wasm.map
+
+node_modules
+bun.lockb
+@build
+build.js
