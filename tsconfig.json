@@ -1,10 +1,9 @@
 {
     "compilerOptions": {
-        "module": "System",
+        "module": "NodeNext",
         "target": "ES2022"
     },
     "files": [
-        "build.ts",
-        "deploy.ts"
+        "build.ts"
     ]
 }
