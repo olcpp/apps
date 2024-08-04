@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "System",
+        "target": "ES2022"
+    },
+    "files": [
+        "build.ts",
+        "deploy.ts"
+    ]
+}
