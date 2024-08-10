@@ -4172,8 +4172,8 @@ void exit_saving(){
 	if(playing!=0) savdang(playing);
 }
 void XACRAFT_MAIN(){
-#ifndef __EMSCRIPTEN__
-	olcpp::initIDBFS(); 
+#ifdef __EMSCRIPTEN__
+	olcpp::fs.mount("/data");
     mkdir("/data/xacraft",S_IRWXU); 
     chdir("/data/xacraft");
 #endif
