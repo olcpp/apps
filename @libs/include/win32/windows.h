@@ -4,7 +4,6 @@
 #include <cstdio>
 
 #include "olcpp/base.h"
-#include "olcpp/console.h"
 
 typedef FILE *HANDLE;
 #define STD_INPUT_HANDLE stdin
@@ -38,7 +37,7 @@ static inline void SetConsoleTitle(const char *title)
 /** Impls... */
 namespace SetConsoleTextAttribute_Impl
 {
-void color_trans(int &a)
+static inline void color_trans(int &a)
 {
     switch (a)
     {

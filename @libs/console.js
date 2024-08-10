@@ -99,4 +99,17 @@ addToLibrary({
     _Impl_GetCharI__deps: ['$doAsyncFunc'],
     _Impl_GetCharI: () => doAsyncFunc(() => Module['console'].getCharWithoutEnter()),
     _Impl_GetCharI__async: true,
+    // _Impl_SetRawMode
+    _Impl_SetRawMode: (use) => {
+        Module['console'].raw(use != 0 ? true : false);
+    },
+    // _Impl_GetConsoleSize
+    _Impl_GetConsoleSize: () => Asyncify.handleSleep((wakeUp) => {
+        setTimeout(() => {
+            const { x, y } = Module['console'].getSize();
+            // console.log(x, y, (x << 16) | (y));
+            wakeUp((x << 16) | (y));
+        });
+    }),
+    _Impl_GetConsoleSize__async: true,
 });
